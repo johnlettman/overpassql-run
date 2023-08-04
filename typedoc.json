@@ -1,0 +1,17 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "name": "OverpassQL Run",
+  "readme": "./README.md",
+  "commentStyle": "jsdoc",
+  "entryPoints": [
+    "./src/index.ts"
+  ],
+  "plugin": [
+    "typedoc-plugin-coverage",
+    "typedoc-plugin-rename-defaults"
+  ],
+  "navigationLinks": {
+    "Repository": "https://github.com/johnlettman/overpassql-run"
+  },
+  "out": "docs"
+}
