@@ -5,6 +5,7 @@
   "description": "A program to execute OverpassQL queries, filter the results, and output into various GIS formats.",
   "license": "MIT",
   "dependencies": {
+    "@maphubs/tokml": "^0.6.1",
     "@types/jest": "^29.5.3",
     "@types/json-schema": "^7.0.12",
     "commander": "^11.0.0",
