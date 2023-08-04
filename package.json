@@ -14,7 +14,7 @@
     "osmtogeojson": "https://github.com/tyrasd/osmtogeojson#snyk-fix-65371a4c4920389f7e5127c141088511",
     "overpass-ts": "^4.3.8",
     "overpassql-loader": "^1.0.0",
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.1",
     "table": "^6.8.1",
     "togpx": "^0.5.4",
     "tokml": "^0.4.0",
