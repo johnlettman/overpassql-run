@@ -1,6 +1,7 @@
 import tokml from 'tokml';
+
+import xmlEscape from 'xml-escape';
 import xmlFormat from 'xml-formatter';
-import { OverpassEndpoint } from 'overpass-ts';
 import osmtogeojson from 'osmtogeojson';
 import { optionsHasOverpassEndpoint, type Formatter } from './formatter';
 import type { OverpassQuery } from 'overpass-ts/dist/common';
@@ -22,8 +23,8 @@ const kmlFormatter: Formatter = (code, options) =>
         try {
           const geo = osmtogeojson(json);
           const kml = tokml(geo, {
-            documentName: options.metadata?.name,
-            documentDescription: options.metadata?.description,
+            documentName: xmlEscape(options.metadata?.name),
+            documentDescription: xmlEscape(options.metadata?.description),
           });
           resolve(options.pretty ? xmlFormat(kml) : kml);
         } catch (err) {
