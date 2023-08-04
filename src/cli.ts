@@ -133,6 +133,7 @@ export function main(argv: string[] = process.argv) {
       formatters[opts.format](source, {
         overpass: new OverpassEndpoint(opts.endpoint),
         pretty: opts.prettify,
+        metadata,
       })
         .then((data) => output(opts.outputPath, data))
         .catch((err) => logger.fatal(err));
