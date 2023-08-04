@@ -16,6 +16,14 @@ const osmjsonFormatter: Formatter = (code, options) =>
     options.overpass
       .queryJson(query)
       .then((json) => {
+        if (options?.metadata?.name) {
+          json['name'] = options.metadata.name;
+        }
+
+        if (options?.metadata?.description) {
+          json['description'] = options.metadata.description;
+        }
+
         resolve(
           JSON.stringify(json, undefined, options?.pretty ? 2 : undefined)
         );
