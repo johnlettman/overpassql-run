@@ -1,12 +1,12 @@
-import fs from 'fs';
-
+import { OverpassEndpoint } from 'overpass-ts';
 import { table, type TableUserConfig } from 'table';
 import { Argument, Option, Command } from 'commander';
 
-import { formatters } from './format';
 import { name, version, description } from '../package.json';
+
 import { logger } from './logger';
-import { OverpassEndpoint } from 'overpass-ts';
+import { formatters } from './format';
+import { input, output } from './io';
 import { Metadata, parseMetadataFromComments } from './metadata';
 
 export function getFormattersTable() {
@@ -38,17 +38,21 @@ export function getFormattersTable() {
 }
 
 async function processArguments(
-  input: string,
-  output: string,
+  inputPath: string,
+  outputPath: string,
   options: { [name: string]: any }
 ) {
-  options.input = [undefined, '-', 'stdin', '/dev/stdin'].includes(input)
+  options.inputPath = [undefined, '-', 'stdin', '/dev/stdin'].includes(
+    inputPath
+  )
     ? null
-    : input;
+    : inputPath;
 
-  options.output = [undefined, '-', 'stdout', '/dev/stdout'].includes(output)
+  options.outputPath = [undefined, '-', 'stdout', '/dev/stdout'].includes(
+    outputPath
+  )
     ? null
-    : output;
+    : outputPath;
 }
 
 export const program = new Command()
@@ -59,13 +63,13 @@ export const program = new Command()
   .helpOption('help, -h, --help')
   .addOption(new Option('--list-formats'))
   .addArgument(
-    new Argument('[input]', 'path to the OverpassQL query file').default(
+    new Argument('[input-path]', 'path to the OverpassQL query file').default(
       '-',
       'use stdin'
     )
   )
   .addArgument(
-    new Argument('[output]', 'path to the formatted output file').default(
+    new Argument('[output-path]', 'path to the formatted output file').default(
       '-',
       'use stdout'
     )
@@ -117,29 +121,21 @@ export function main(argv: string[] = process.argv) {
     process.exit(0);
   }
 
-  const ql = opts.input
-    ? fs.readFileSync(opts.input, { encoding: 'utf-8', flag: 'r' })
-    : process.stdin.read();
+  input(opts.inputPath)
+    .then((source) => {
+      const metadata: Metadata = opts.metadataFromComments
+        ? parseMetadataFromComments(source)
+        : {
+            name: opts.name,
+            description: opts.description,
+          };
 
-  const metadata: Metadata = opts.metadataFromComments
-    ? parseMetadataFromComments(ql)
-    : {
-        name: opts.name,
-        description: opts.description,
-      };
-
-  formatters[opts.format](ql, {
-    overpass: new OverpassEndpoint(opts.endpoint),
-    pretty: opts.prettify,
-  })
-    .then((data) => {
-      opts.output
-        ? fs.writeFileSync(opts.output, data, { encoding: 'utf-8', flag: 'w' })
-        : process.stdout.write(data + '\n', (err) => {
-            if (err) {
-              logger.fatal(err);
-            }
-          });
+      formatters[opts.format](source, {
+        overpass: new OverpassEndpoint(opts.endpoint),
+        pretty: opts.prettify,
+      })
+        .then((data) => output(opts.outputPath, data))
+        .catch((err) => logger.fatal(err));
     })
     .catch((err) => logger.fatal(err));
 }
