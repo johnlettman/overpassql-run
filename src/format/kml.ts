@@ -21,7 +21,10 @@ const kmlFormatter: Formatter = (code, options) =>
       .then((json) => {
         try {
           const geo = osmtogeojson(json);
-          const kml = tokml(geo);
+          const kml = tokml(geo, {
+            documentName: options.metadata?.name,
+            documentDescription: options.metadata?.description,
+          });
           resolve(options.pretty ? xmlFormat(kml) : kml);
         } catch (err) {
           reject(err);
