@@ -17,7 +17,7 @@
     "overpassql-loader": "^1.0.0",
     "prettier": "^3.0.1",
     "table": "^6.8.1",
-    "togpx": "^0.5.4",
+    "togpx": "https://github.com/tyrasd/togpx#snyk-fix-12edd5611b82b65d2659d522d868905e",
     "tokml": "^0.4.0",
     "ts-jest": "^29.1.1",
     "tslog": "^4.8.2",
