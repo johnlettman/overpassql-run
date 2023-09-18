@@ -7,7 +7,7 @@
   "dependencies": {
     "@maphubs/tokml": "^0.6.1",
     "@types/jest": "^29.5.4",
-    "@types/json-schema": "^7.0.12",
+    "@types/json-schema": "^7.0.13",
     "commander": "^11.0.0",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
