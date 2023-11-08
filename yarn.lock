@@ -871,10 +871,10 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
 
-"@types/xml-escape@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@types/xml-escape/-/xml-escape-1.1.2.tgz#fa87978e75cd4108800aaaed0aa1e1024e94e5c8"
-  integrity sha512-K5KEUjc4Vu4gQyuO2sjww8SNIRPas6tX/leBHEyyuANPCssZ9FH0bhouhdNMFFGevFUlkjn6lXJEkDYqntPWZw==
+"@types/xml-escape@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@types/xml-escape/-/xml-escape-1.1.3.tgz#bd584617ab165cce7a53162e31f5d064418bfae1"
+  integrity sha512-xyp280LPQAj/IFwv4cdNgToDMtpGMADWr5uDbi1der5zqldBnk6VVLF/8N016SjgFDKi9UA4YW6Q072vhDaegA==
 
 "@types/yargs-parser@*":
   version "21.0.0"
