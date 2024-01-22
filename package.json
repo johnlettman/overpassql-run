@@ -19,7 +19,7 @@
     "table": "^6.8.1",
     "togpx": "https://github.com/tyrasd/togpx#snyk-fix-12edd5611b82b65d2659d522d868905e",
     "tokml": "^0.4.0",
-    "ts-jest": "^29.1.1",
+    "ts-jest": "^29.1.2",
     "tslog": "^4.9.2",
     "typedoc": "^0.25.7",
     "typedoc-plugin-coverage": "^2.2.0",
