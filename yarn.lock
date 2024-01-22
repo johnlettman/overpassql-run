@@ -3801,10 +3801,10 @@ xml-escape@^1.1.0:
   resolved "https://registry.yarnpkg.com/xml-escape/-/xml-escape-1.1.0.tgz#3904c143fa8eb3a0030ec646d2902a2f1b706c44"
   integrity sha512-B/T4sDK8Z6aUh/qNr7mjKAwwncIljFuUP+DO/D5hloYFj+90O88z8Wf7oSucZTHxBAsC1/CTP4rtx/x1Uf72Mg==
 
-xml-formatter@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/xml-formatter/-/xml-formatter-3.6.0.tgz#3ba4a719a9e2275d04f51aa85743ddcd96e99089"
-  integrity sha512-Wic80ENNLF/5mLcc82hVLmoOWQlLDJtVv+N1/hkP4hBuVXPLKrXo92/4V23QYPKfUxvCU6Y2AcdpHCIA/xexFw==
+xml-formatter@^3.6.2:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/xml-formatter/-/xml-formatter-3.6.2.tgz#f68ad1519beef8353f8759ab6269b91265bdef4a"
+  integrity sha512-enWhevZNOwffZFUhzl1WMcha8lFLZUgJ7NzFs5Ug4ZOFCoNheGYXz1J9Iz/e+cTn9rCkuT1GwTacz+YlmFHOGw==
   dependencies:
     xml-parser-xo "^4.1.0"
 
