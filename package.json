@@ -23,7 +23,7 @@
     "tslog": "^4.9.3",
     "typedoc": "^0.26.4",
     "typedoc-plugin-coverage": "^3.3.0",
-    "typedoc-plugin-markdown": "^4.2.1",
+    "typedoc-plugin-markdown": "^4.2.2",
     "typedoc-plugin-rename-defaults": "^0.7.1",
     "xml-escape": "^1.1.0",
     "xml-formatter": "^3.6.3"
