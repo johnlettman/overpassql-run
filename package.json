@@ -24,7 +24,7 @@
     "typedoc": "^0.26.11",
     "typedoc-plugin-coverage": "^3.3.0",
     "typedoc-plugin-markdown": "^4.2.10",
-    "typedoc-plugin-rename-defaults": "^0.7.1",
+    "typedoc-plugin-rename-defaults": "^0.7.2",
     "xml-escape": "^1.1.0",
     "xml-formatter": "^3.6.3"
   },
