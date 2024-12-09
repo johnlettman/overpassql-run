@@ -3655,10 +3655,10 @@ typedarray@~0.0.5:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.7.tgz#799207136a37f3b3efb8c66c40010d032714dc73"
   integrity sha512-ueeb9YybpjhivjbHP2LdFDAjbS948fGEPj+ACAMs4xCMmh72OCOMQWBQKlaN4ZNQ04yfLSDLSx1tGRIoWimObQ==
 
-typedoc-plugin-coverage@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/typedoc-plugin-coverage/-/typedoc-plugin-coverage-3.3.0.tgz#2b00830f32129e7433708f6893729d6770b96276"
-  integrity sha512-wpywQ95tqGSD6IbYUPMXSKiwnSWboSKdx2y9X6SJQKzQvBqZoz5iiUyDJFixtW8v7+xmrqXFR/B6Wy37FNhVqA==
+typedoc-plugin-coverage@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/typedoc-plugin-coverage/-/typedoc-plugin-coverage-3.4.0.tgz#ca0f4a8cb7d9e2718995520a39e16fdbeb1b22ca"
+  integrity sha512-I8fLeQEERncGn4sUlGZ+B1ehx4L7VRwqa3i6AP+PFfvZK0ToXBGkh9sK7xs8l8FLPXq7Cv0yVy4YCEGgWNzDBw==
 
 typedoc-plugin-markdown@^4.2.10:
   version "4.2.10"
