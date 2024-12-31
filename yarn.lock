@@ -3660,10 +3660,10 @@ typedoc-plugin-coverage@^3.4.0:
   resolved "https://registry.yarnpkg.com/typedoc-plugin-coverage/-/typedoc-plugin-coverage-3.4.0.tgz#ca0f4a8cb7d9e2718995520a39e16fdbeb1b22ca"
   integrity sha512-I8fLeQEERncGn4sUlGZ+B1ehx4L7VRwqa3i6AP+PFfvZK0ToXBGkh9sK7xs8l8FLPXq7Cv0yVy4YCEGgWNzDBw==
 
-typedoc-plugin-markdown@^4.3.3:
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/typedoc-plugin-markdown/-/typedoc-plugin-markdown-4.3.3.tgz#212f51faf742f8cc918e7ae239fd814b5b096317"
-  integrity sha512-kESCcNRzOcFJATLML2FoCfaTF9c0ujmbZ+UXsJvmNlFLS3v8tDKfDifreJXvXWa9d8gUcetZqOqFcZ/7+Ba34Q==
+typedoc-plugin-markdown@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/typedoc-plugin-markdown/-/typedoc-plugin-markdown-4.4.0.tgz#6ae3400199aa83bfe0ce9e944443c270479ec46b"
+  integrity sha512-4207DYcxJGWQRrEVTza7XkIo7ldhuEzJBaZO6dX5ogUGlvWeRTo4uiN+R1F11ttJGh4toLtxrpoi2wTTP+nEwA==
 
 typedoc-plugin-rename-defaults@^0.7.2:
   version "0.7.2"
