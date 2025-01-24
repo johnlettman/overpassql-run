@@ -26,7 +26,7 @@
     "typedoc-plugin-markdown": "^4.4.1",
     "typedoc-plugin-rename-defaults": "^0.7.2",
     "xml-escape": "^1.1.0",
-    "xml-formatter": "^3.6.3"
+    "xml-formatter": "^3.6.4"
   },
   "devDependencies": {
     "@types/node": "^22.10.9",
