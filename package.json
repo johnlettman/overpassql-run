@@ -21,7 +21,7 @@
     "tokml": "^0.4.0",
     "ts-jest": "^29.2.5",
     "tslog": "^4.9.3",
-    "typedoc": "^0.27.6",
+    "typedoc": "^0.27.7",
     "typedoc-plugin-coverage": "^3.4.1",
     "typedoc-plugin-markdown": "^4.4.1",
     "typedoc-plugin-rename-defaults": "^0.7.2",
