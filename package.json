@@ -9,7 +9,7 @@
     "@types/jest": "^29.5.14",
     "@types/json-schema": "^7.0.15",
     "commander": "^13.1.0",
-    "eslint": "^9.24.0",
+    "eslint": "^9.25.0",
     "eslint-config-prettier": "^10.1.2",
     "jest": "^29.7.0",
     "osmtogeojson": "https://github.com/tyrasd/osmtogeojson#snyk-fix-65371a4c4920389f7e5127c141088511",
