@@ -11,7 +11,7 @@
     "commander": "^14.0.0",
     "eslint": "^9.30.1",
     "eslint-config-prettier": "^10.1.5",
-    "jest": "^30.0.3",
+    "jest": "^30.0.4",
     "osmtogeojson": "https://github.com/tyrasd/osmtogeojson#snyk-fix-65371a4c4920389f7e5127c141088511",
     "overpass-ts": "^4.3.8",
     "overpassql-loader": "^1.0.0",
