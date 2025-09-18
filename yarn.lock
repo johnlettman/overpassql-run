@@ -4186,10 +4186,10 @@ traverse@~0.5.1:
   resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.5.2.tgz#e203c58d5f7f0e37db6e74c0acb929bb09b61d85"
   integrity sha512-PUBVcfB3RqgLpzgTRGNiqK4duqrDbgGa1bobbUtzUwLiBNAjZ7vd5eCOdBxqZ/Fgezagr9o69IxP2fZp41RGFA==
 
-ts-jest@^29.4.1:
-  version "29.4.1"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-29.4.1.tgz#42d33beb74657751d315efb9a871fe99e3b9b519"
-  integrity sha512-SaeUtjfpg9Uqu8IbeDKtdaS0g8lS6FT6OzM3ezrDfErPJPHNDo/Ey+VFGP1bQIDfagYDLyRpd7O15XpG1Es2Uw==
+ts-jest@^29.4.3:
+  version "29.4.3"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-29.4.3.tgz#23264489bebb5b3e2c7966dbf6788e960f244f7c"
+  integrity sha512-KTWbK2Wot8VXargsLoxhSoEQ9OyMdzQXQoUDeIulWu2Tf7gghuBHeg+agZqVLdTOHhQHVKAaeuctBDRkhWE7hg==
   dependencies:
     bs-logger "^0.2.6"
     fast-json-stable-stringify "^2.1.0"
