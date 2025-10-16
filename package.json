@@ -22,7 +22,7 @@
     "ts-jest": "^29.4.5",
     "tslog": "^4.9.3",
     "typedoc": "^0.28.14",
-    "typedoc-plugin-coverage": "^4.0.1",
+    "typedoc-plugin-coverage": "^4.0.2",
     "typedoc-plugin-markdown": "^4.9.0",
     "typedoc-plugin-rename-defaults": "^0.7.3",
     "xml-escape": "^1.1.0",
